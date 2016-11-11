@@ -2,12 +2,9 @@
 
 /* global */
 
-body {
-  background-color: #eee;
-}
-
 h2 {
   color: red;
+  margin: 0;
 }
 
 ul {
@@ -24,5 +21,5 @@ ul li {
 .container {
   width: 960px;
   margin: 0 auto;
-  background-color: #fff;
+  border: 1px solid #000;
 }
