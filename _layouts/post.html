@@ -1,22 +1,45 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-<head>
+<section class="post">
+{{ content }}
+</section>
+<section class="meta">
 
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>{{ page.title }}</title>
-
-  <link rel="stylesheet" href="../css/normalize.min.css">
-  <link rel="stylesheet" href="../css/post.css">
-
-  <link type="image/x-icon" rel="shortcut icon" href="../src/img/icon.ico">
-
-</head>
-
-<body>
-
-  {{ content }}
-
-</body>
-
-</html>
+<br/>
+<br/>
+<span>
+	<a {% if page.previous %} href="{{ site.url }}{{ page.previous.url }}" class="pageNav"{% endif %} {% unless page.previous %} class="pageNavInvalid" {% endunless %} >Previous</a>
+	&nbsp;&nbsp;&nbsp;
+	<a {% if page.next %} href="{{ site.url }}{{ page.next.url }}" class="pageNav"{% endif %} {% unless page.next %} class="pageNavInvalid" {% endunless %} >Next</a>
+</span>
+<hr>
+<span class="author">
+  <a href="http://webfrogs.github.com">{{ site.author }}</a>
+</span>
+<span class="time">
+  /
+  <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
+</span>
+<br />
+<span class="license">
+  Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
+</span>
+{% if page.categories %}
+<span class="categories">
+  in categories
+  {% for cat in page.categories %}
+  <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+  {% endfor %}
+</span>
+{% endif %}
+{% if page.tags %}
+<span class="tags">
+  tagged with 
+  {% for tag in page.tags %}
+  <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
+  {% endfor %}
+</span>
+{% endif %}
+</section>
