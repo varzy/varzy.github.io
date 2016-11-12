@@ -15,8 +15,27 @@
 
 <body>
 
-  <div class="container">
-    {{ content }}
+  <div id="container">
+    <div id="main" role="main">
+      <header>
+        <h1>{{ page.title }}</h1>
+      </header>
+      <nav>
+        <span><a title="home page" class="" href="/">Home</a></span>
+        <span><a title="categories" class="" href="/categories/">Categories</a></span>
+        <span><a title="tags" class="" href="/tags/">Tags</a></span>
+        <span><a title="about" class="" href="/about/">About</a></span>
+        <span><a title="subscribe by RSS" class="" href="/feed/">Subscribe</a></span>
+      </nav>
+      <article class="content">
+        {{ content }}
+      </article>
+    </div>
+
+    <footer>
+      <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://pages.github.com">GitHub</a> | Copyright 2012 - {{site.time | date:"%Y"}} by <a href="/about/">nswebfrog</a></small></p>
+    </footer>
+
   </div>
 
 </body>
