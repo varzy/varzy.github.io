@@ -1,0 +1,35 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "my homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -p",
+    "watch": "webpack -w --display-modules --display-reasons"
+  },
+  "repository": {
+    "type": "git",
+    "url": "E:\\\\NutData\\\\Precious\\\\Repo\\\\homepage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.5.3",
+    "normalize.css": "^7.0.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.3.0",
+    "wingcss": "^1.0.0-beta"
+  }
+}

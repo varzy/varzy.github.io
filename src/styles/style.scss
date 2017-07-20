@@ -1,0 +1,67 @@
+@import url('https://fonts.css.network/css?family=Bellefair');
+@import './variables';
+// preset
+html {
+  // font-family: -apple-system, "Hiragino Sans GB", "Segoe UI", BlinkMacSystemFont, Avenir, "Avenir Next", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  // font-family: -apple-system, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: 'Bellefair', -apple-system, "Hiragino Sans GB", serif;
+  font-size: 62.5%;
+  body {
+    font-size: $base;
+    position: relative;
+  }
+  h1,
+  h2 {
+    font-weight: 100;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+    }
+  }
+  a:link,
+  a:visited {
+    color: $a-base;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $a-active;
+  }
+}
+
+// main styles
+body {
+  background-color: $bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  color: $ink;
+  .wrapper {
+    h1,
+    h2,
+    ul li {
+      cursor: default;
+    }
+    width: 100%;
+    h1 {
+      font-size: $h1;
+    }
+    h2 {
+      font-size: $h2;
+      font-style: italic;
+      padding: 1rem 0px;
+      cursor: pointer;
+      // display: inline-block;
+    }
+    ul li {
+      padding: .4rem 0;
+    }
+  }
+}
