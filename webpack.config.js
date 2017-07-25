@@ -4,6 +4,7 @@ const webpack = require("webpack");
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   // devtool: "sourcemap",
@@ -17,7 +18,7 @@ module.exports = {
     loaders: [
       {
         test: /\.css$/,
-        loader: ["style-loader", "css-loader"]
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
       },
       {
         test: /\.scss$/,
@@ -49,6 +50,18 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin('common.js'),
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new ExtractTextPlugin("styles.css"),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    }),
+    new ExtractTextPlugin({
+      filename: 'css/[name].[contenthash:8].css',
+      allChunks: true
+    }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, './src/index.html'),
       filename: './index.html'
