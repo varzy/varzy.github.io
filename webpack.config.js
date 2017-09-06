@@ -4,6 +4,7 @@ const webpack = require("webpack");
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 // const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -12,17 +13,26 @@ module.exports = {
   entry: './src/entry.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: './bundle_[hash].js',
+    filename: './app_[hash].js',
   },
   module: {
     loaders: [
       {
         test: /\.css$/,
-        loader: ["style-loader", "css-loader"]
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader"
+        })
       },
       {
         test: /\.scss$/,
-        loader: ["style-loader", "css-loader", "sass-loader"]
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: [
+            "css-loader",
+            "sass-loader"
+          ]
+        })
       },
       {
         test: /\.js$/,
@@ -62,6 +72,7 @@ module.exports = {
     //   filename: 'css/[name].[contenthash:8].css',
     //   allChunks: true
     // }),
+    new ExtractTextPlugin('app_[hash].css'),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, './src/index.html'),
       filename: './index.html'
