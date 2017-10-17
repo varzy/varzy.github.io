@@ -1,36 +1,34 @@
 {
   "name": "homepage",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "my homepage",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -p",
-    "dev": "webpack -w --display-modules --display-reasons"
+    "dev": "webpack-dev-server --open",
+    "build": "webpack -p"
   },
+  "author": "zy",
+  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "E:\\\\NutData\\\\Precious\\\\Repo\\\\homepage.git"
+    "url": "git@gitlab.com:varzy/norfe.git"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "clean-webpack-plugin": "^0.1.16",
+    "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
-    "extract-text-webpack-plugin": "^3.0.0",
+    "extract-text-webpack-plugin": "^3.0.1",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.30.1",
     "json-loader": "^0.5.7",
-    "node-sass": "^4.5.3",
-    "normalize.css": "^7.0.0",
-    "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "uglifyjs-webpack-plugin": "^0.4.6",
-    "webpack": "^3.5.5",
-    "wingcss": "^1.0.0-beta"
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.8.0",
+    "webpack-dev-server": "^2.9.2"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
   }
 }

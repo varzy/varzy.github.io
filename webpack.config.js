@@ -1,22 +1,25 @@
-'use strict';
+// 使用严格模式
+'use strict'
 
-const webpack = require("webpack");
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// 引入资源
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
-  // devtool: "sourcemap",
-  // context: __dirname + "/src",
-  entry: './src/entry.js',
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist'
+  },
+  entry: path.resolve(__dirname, './src/main.js'),
   output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: './app_[hash].js',
+    filename: 'app_[hash].js',
+    path: path.resolve(__dirname, './dist')
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
@@ -25,58 +28,50 @@ module.exports = {
         })
       },
       {
-        test: /\.scss$/,
+        test: /\.styl$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
           use: [
             "css-loader",
-            "sass-loader"
+            "stylus-loader"
           ]
         })
       },
       {
-        test: /\.js$/,
-        loader: "babel-loader",
-        exclude: /node_modules/,
-        options: {
-          presets: ['env'],
-          plugins: ['transform-runtime']
-        }
-      },
-      {
-        test: /\.json$/,
-        use: 'json-loader'
-      },
-
-      {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'file-loader',
-        query: {
-          name: '[name].[ext]',
-          outputPath: './img/',
-          publicPath: ''
-        }
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 20480
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 20480
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
-    // new webpack.optimize.CommonsChunkPlugin('common.js'),
     new webpack.optimize.ModuleConcatenationPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    // new ExtractTextPlugin("styles.css"),
-    // new webpack.LoaderOptionsPlugin({
-    //   minimize: true,
-    //   debug: false
-    // }),
-    // new ExtractTextPlugin({
-    //   filename: 'css/[name].[contenthash:8].css',
-    //   allChunks: true
-    // }),
     new ExtractTextPlugin('app_[hash].css'),
     new HtmlWebpackPlugin({
+      title: 'test',
       template: path.join(__dirname, './src/index.html'),
-      filename: './index.html'
+      filename: 'index.html'
     }),
-    new CleanWebpackPlugin(['dist'])
+    new CleanWebpackPlugin([
+      'dist'
+    ])
   ]
 }
