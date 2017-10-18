@@ -6,6 +6,7 @@ html
   font-size: 62.5%
   font-family: 'Bellefair', -apple-system, "Hiragino Sans GB", serif
   body
+    font-size: $size-m
     display: flex
     justify-content: center
     align-items: center
@@ -14,7 +15,6 @@ html
     -webkit-user-select: none
     -moz-user-select: none
     color: $color-ink
-    font-size: $size-m
     position: relative
     min-height: 100vh
     background-color: $color-bg
@@ -30,9 +30,6 @@ html
         color: $color-ink
       &:hover, &:active
         color: $color-adron
-    label
-      margin: 0
-      padding: 0
     h1, h2
       margin: 0
       padding: 0
@@ -48,7 +45,6 @@ html
     font-style: italic
     padding-top: 3.2rem
     padding-bottom: 2.8rem
-    font-size: $size-s
   .links
     margin: 0
     padding: 0
@@ -64,8 +60,16 @@ html
   .wrapper
     .name
       font-size: $size-l
+    .desc
+      font-size: $size-s
+    .links
+      font-size: $size-m
 
 @media only screen and (max-width: 639px)
   .wrapper
     .name
-      font-size: $size-l - .4rem
+      font-size: $size-l - .6rem
+    .desc
+      font-size: $size-s - .2rem
+    .links
+      font-size: $size-m - .2rem
