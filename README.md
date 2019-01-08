@@ -1,3 +1,1 @@
-# Homepage
-
-My homepage.
+# HOMEPAGE

@@ -1,41 +1,54 @@
-// 使用严格模式
-'use strict'
-
 // 引入资源
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
+const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
-  devtool: 'inline-source-map',
+  mode: process.env.NODE_ENV,
+  devtool: 'source-map',
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    hot: true,
+    port: 8000
   },
-  entry: path.resolve(__dirname, './src/main.js'),
+  entry: path.resolve(__dirname, './src/entry.js'),
   output: {
-    filename: 'app_[hash].js',
+    filename: devMode ? '[name].js' : '[name].[hash].js',
     path: path.resolve(__dirname, './dist')
   },
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
-        })
-      },
-      {
-        test: /\.styl$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: [
-            "css-loader",
-            "stylus-loader"
-          ]
-        })
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              config: {
+                path: 'postcss.config.js'
+              }
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ],
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -62,16 +75,23 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.optimize.ModuleConcatenationPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new ExtractTextPlugin('app_[hash].css'),
+    new MiniCssExtractPlugin({
+      filename: devMode ? '[name].css' : '[name].[hash].css',
+      chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
+    }),
     new HtmlWebpackPlugin({
-      title: 'test',
-      template: path.join(__dirname, './src/index.html'),
+      template: path.join(__dirname, './src/views/index.html'),
       filename: 'index.html'
     }),
     new CleanWebpackPlugin([
       'dist'
+    ]),
+    new CopyWebpackPlugin([
+      { from: 'static/favicon.png', to: 'favicon.png' },
+      { from: 'static/CNAME.txt', to: 'CNAME.txt' }
     ])
   ]
 }
