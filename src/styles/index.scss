@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bellefair");
+@import url("https://fonts.googleapis.com/css?family=Bellefair&display=block");
 @import "variables";
 
 html {
@@ -6,6 +6,8 @@ html {
   font-family: "Bellefair", -apple-system, "Hiragino Sans GB", serif;
 
   body {
+    margin: 0;
+    padding: 0;
     font-size: $size-m;
     display: flex;
     justify-content: center;
@@ -29,12 +31,14 @@ html {
     }
 
     a {
+      position: relative;
       outline: none;
       text-decoration: none;
 
       &:link,
       &:visited {
         color: $color-ink;
+        transition: all 0.2s ease-in-out;
       }
 
       &:hover,
