@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html",
-    "lint": "prettier --write src/**/*.{html,css,scss,sass,js,json}",
+    "lint": "prettier --write src/**/*.{html,css,scss,sass,js,json} --print-width 100",
     "deploy": "bash deploy.sh"
   },
   "devDependencies": {
