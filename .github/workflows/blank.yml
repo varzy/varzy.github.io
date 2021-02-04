@@ -27,12 +27,12 @@ jobs:
           echo 'varzy.me' > CNAME
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: MASTER
-          FOLDER: dist
-          CLEAN: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master
+          force_orphan: true
+          publish_dir: ./dist
 
       - name: Done
         run: echo Done.
