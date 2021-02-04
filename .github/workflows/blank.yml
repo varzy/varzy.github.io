@@ -2,7 +2,7 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the source branch
   push:
@@ -22,15 +22,17 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install and Build
-        run: yarn && yarn build
-        
+        run: |
+          yarn && yarn build
+          echo 'varzy.me' > CNAME
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: MASTER
           FOLDER: dist
-          CLEAN: true  
+          CLEAN: true
 
       - name: Done
         run: echo Done.
