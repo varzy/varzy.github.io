@@ -6,7 +6,8 @@
   align-items: center;
 
   @include media-breakpoint-down(lg) {
-    padding-top: 16vh;
+    padding-top: 96px;
+    padding-bottom: 120px;
     display: block;
     width: 100%;
     height: auto;
@@ -24,24 +25,39 @@
     border-radius: 50%;
   }
 
-  .links {
+  h1.title {
+    font-weight: lighter;
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+
+  h2.section_title {
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-weight: lighter;
+  }
+
+  .list {
     padding: 0;
     margin: 0;
 
-    .link {
+    &-item {
       list-style: none;
 
-      &-icon {
-        display: inline-block;
-        width: 24px;
+      .link {
+        &-icon {
+          display: inline-block;
+          width: 24px;
+        }
       }
     }
   }
 
-  .links-links {
-    .link {
+  .list-links {
+    .list-item {
       display: inline-block;
-      margin-right: 8px;
+      margin-right: 16px;
     }
   }
 }

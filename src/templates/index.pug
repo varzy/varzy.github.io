@@ -25,24 +25,27 @@ html(lang=locale.htmlLang)
         .row
           .col-lg-5.text-center.text-lg-end
             img.avatar(src="../assets/avatar.jpg", alt="my avatar")
-          .col-lg-7
-            h1 #{name}
+          .col-lg-6.col-xl-5.mt-lg-0.mt-4
+            h1.title #{name}
 
             each desc in descriptions
               p.desc
                 != desc
 
-            h2 #{contact.title}
-            ul.links.links-contact
+            h2.section_title #{contact.title}
+            ul.list.list-contact
               each link in contact.list
-                li.link.align-self-center
-                  span.link-icon
-                    i.link-icon-inner(class=link.icon)
-                  a.link-label(href=link.href) #{link.label}
+                li.list-item.align-self-center
+                  a.link(href=link.href)
+                    span.link-icon
+                      i.link-icon-inner(class=link.icon)
+                    span.link-label #{link.label}
 
-            h2 #{links.title}
-            ul.links.links-links
+            h2.section_title #{links.title}
+            ul.list.list-links
               each link in links.list
-                li.link.align-self-center
-                  i.link-icon(class=link.icon)
-                  a.link-label(href=link.href) #{link.label}
+                li.list-item.align-self-center
+                  a.link(href=link.href, target=link.target ? link.target : false)
+                    span.link-icon
+                      i.link-icon-inner(class=link.icon)
+                    span.link-label #{link.label}
