@@ -17,14 +17,9 @@ html(lang=locale.htmlLang)
     .index
       .locale
         if locale.key == 'zh_cn'
-          span 中
+          a(href="en.html") ENG
         else
           a(href="index.html") 中
-        span /
-        if locale.key == 'en'
-          span ENG
-        else
-          a(href="en.html") ENG
 
       .container
         .row
@@ -32,27 +27,22 @@ html(lang=locale.htmlLang)
             img.avatar(src="../assets/avatar.jpg", alt="my avatar")
           .col-lg-7
             h1 #{name}
-            p.desc
-              != desc
+
+            each desc in descriptions
+              p.desc
+                != desc
 
             h2 #{contact.title}
-            ul.links
+            ul.links.links-contact
               each link in contact.list
-                li.align-self-center
-                  i(class='bi-' + link.icon)
-                  a(href=link.href) #{link.label}
+                li.link.align-self-center
+                  span.link-icon
+                    i.link-icon-inner(class=link.icon)
+                  a.link-label(href=link.href) #{link.label}
 
-            h2 #{more.title}
-            ul
-              li.link
-                a(href='https://varzy.me/blog/') Blog
-              li.link
-                a(href='https://twitter.com/varzyme' target='_blank') Twitter
-              li.link
-                a(href='https://www.douban.com/people/179641263/' target='_blank') Douban
-              li.link
-                a(href='https://github.com/varzy' target='_blank') Github
-              li.link
-                a(href='https://varzy.me/resume/') Resume
-              li.link
-                a(href='mailto:i@yuezhao.me') Email
+            h2 #{links.title}
+            ul.links.links-links
+              each link in links.list
+                li.link.align-self-center
+                  i.link-icon(class=link.icon)
+                  a.link-label(href=link.href) #{link.label}
