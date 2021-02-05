@@ -6,14 +6,21 @@
   "author": "zy <varzy@live.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html",
-    "lint": "prettier --write \"src/**/*.{html,css,scss,sass,js,json}\" --print-width 100"
+    "generate": "node ./src/generate.js",
+    "dev": "parcel \"src/templates/index.html\"",
+    "build": "parcel build \"src/templates/index.html\"",
+    "lint": "prettier --write \"src/**/*.{html,css,scss,sass,js,json}\" --print-width 100",
+    "gd": "npm run generate && npm run dev",
+    "gb": "npm run generate && npm run build"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.2",
+    "pug": "^3.0.0",
     "sass": "^1.26.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
+    "bootstrap-icons": "^1.3.0"
+  }
 }

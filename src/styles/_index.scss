@@ -1,0 +1,26 @@
+.index {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 16vh;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .locale {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .avatar {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+  }
+}

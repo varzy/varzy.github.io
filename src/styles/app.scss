@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import "reset";
+@import "bootstrap";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "index";
+
+// @import "variables";
+
+// html {
+//   font-size: 62.5%;
+//   font-family: "Bellefair", -apple-system, "Hiragino Sans GB", serif;
+
+//   body {
+//     margin: 0;
+//     padding: 0;
+//     font-size: $size-m;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     user-select: none;
+//     -webkit-user-select: none;
+//     -moz-user-select: none;
+//     color: $color-ink;
+//     position: relative;
+//     min-height: 100vh;
+//     background-color: $color-bg;
+
+//     * {
+//       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+//       box-sizing: border-box;
+//     }
+
+//     img {
+//       display: block;
+//     }
+
+//     a {
+//       position: relative;
+//       outline: none;
+//       text-decoration: none;
+
+//       &:link,
+//       &:visited {
+//         color: $color-ink;
+//         transition: all 0.2s ease-in-out;
+//       }
+
+//       &:hover,
+//       &:active {
+//         color: $color-adron;
+//       }
+//     }
+
+//     h1,
+//     h2 {
+//       margin: 0;
+//       padding: 0;
+//     }
+
+//     .wrapper {
+//       .name {
+//         cursor: default;
+//         width: 100%;
+//         font-weight: 100;
+//       }
+
+//       .desc {
+//         width: 100%;
+//         font-weight: 100;
+//         font-style: italic;
+//         padding-top: 3.2rem;
+//         padding-bottom: 2.8rem;
+//       }
+
+//       .links {
+//         margin: 0;
+//         padding: 0;
+
+//         .link {
+//           list-style: none;
+//           padding: 0.5rem 0;
+
+//           &:first-child {
+//             padding-top: 0;
+//           }
+
+//           &:last-child {
+//             padding-bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 640px) {
+//   .wrapper {
+//     .name {
+//       font-size: $size-l;
+//     }
+
+//     .desc {
+//       font-size: $size-s;
+//     }
+
+//     .links {
+//       font-size: $size-m;
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 639px) {
+//   .wrapper {
+//     .name {
+//       font-size: $size-l - 0.6rem;
+//     }
+
+//     .desc {
+//       font-size: $size-s - 0.2rem;
+//     }
+
+//     .links {
+//       font-size: $size-m - 0.2rem;
+//     }
+//   }
+// }
