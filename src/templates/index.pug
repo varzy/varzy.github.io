@@ -36,7 +36,7 @@ html(lang=locale.htmlLang)
             ul.list.list-contact
               each link in contact.list
                 li.list-item.align-self-center
-                  a.link(href=link.href)
+                  a.link(href=link.href, target=link.target ? link.target : false)
                     span.link-icon
                       i.link-icon-inner(class=link.icon)
                     span.link-label #{link.label}

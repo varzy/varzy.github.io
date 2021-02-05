@@ -4,7 +4,7 @@ module.exports = [
     targetFileName: 'index.html',
     name: '赵 越',
     descriptions: [
-      `一介布衣，平平无奇，但进击的普通人。`,
+      `进击的普通人。`,
       `Web 开发工程师，目前在搜狐写前端。对大部分技术充满兴趣，但愚笨不堪，情商有拙，挣钱无术，`,
     ],
     contact: {
