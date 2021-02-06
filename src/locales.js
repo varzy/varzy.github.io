@@ -51,9 +51,9 @@ module.exports = [
     targetFileName: 'index.html',
     name: 'AIDEN ZHAO',
     descriptions: [
-      `Hey there! I'm a post-90s guy who still has dreams to chase. Always believe in <a href="https://en.wiktionary.org/wiki/%E6%96%AD%E6%8D%A8%E9%9B%A2" target="_blank">Danshari</a> and keeping my room tidy and clean. Plus, I'm also a huge fan of ACG culture and classic rock music.`,
+      `I'm a post-90s guy who still has dreams to chase. Always believe in <a href="https://en.wiktionary.org/wiki/%E6%96%AD%E6%8D%A8%E9%9B%A2" target="_blank">Danshari</a> and keeping my room tidy and clean. Plus, I'm also a huge fan of ACG culture and classic rock music.`,
       `Currently, I'm working as a front-end developer at <a href="https://www.sohu.com/" target="_blank">Sohu</a> located in Beijing. <a href="https://vuejs.org/" target="_blank">Vue</a> and <a href="https://mp.weixin.qq.com/cgi-bin/wx" target="_blank">Wechat Miniprogram</a> are what I usually use to do the programming. Although I haven't made any achievements in the field yet, computer technologies will always be my passion.`,
-      `Ordinary and silly as I am , I'm still hoping that I will be able to bring some small changes to the world, even just tiny little ones. Ultimately, no matter how tough life gets, I'm always on the road.`,
+      `Ordinary and silly as I am, I'm still hoping that I will be able to bring some small changes to the world, even just tiny little ones. Ultimately, no matter how tough life gets, I'm always on the road.`,
     ],
     contact: {
       title: 'Contact',
