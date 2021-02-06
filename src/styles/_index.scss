@@ -31,8 +31,16 @@
     margin-bottom: 8px;
   }
 
+  p.desc {
+    margin-bottom: 8px;
+
+    a {
+      color: $link-color;
+    }
+  }
+
   h2.section_title {
-    font-size: 24px;
+    font-size: 34px;
     margin-top: 32px;
     margin-bottom: 8px;
     font-weight: lighter;

@@ -4,8 +4,9 @@ module.exports = [
     targetFileName: 'index.html',
     name: '赵 越',
     descriptions: [
-      `进击的普通人。`,
-      `Web 开发工程师，目前在搜狐写前端。对大部分技术充满兴趣，但愚笨不堪，情商有拙，挣钱无术，`,
+      `进击的普通人。90后。断舍离主义者，睡醒了会叠被子。ACG 爱好者，老摇滚爱好者。`,
+      `坐标北京，目前在<a href="https://www.sohu.com/" target="_blank">搜狐</a>写前端，日常主要使用 <a href="https://vuejs.org/" target="_blank">Vue</a> 和<a href="https://mp.weixin.qq.com/cgi-bin/wx" target="_blank">微信小程序</a>。对大部分互联网技术充满兴趣，奈何愚笨不堪，且眼高手低，直到现在也没搞出什么名堂。`,
+      `尽管平平无奇，但仍然希望这个世界的运行轨迹能因我而发生一丝偏转。我正在努力。`,
     ],
     contact: {
       title: 'Contact',
@@ -49,7 +50,11 @@ module.exports = [
     locale: { key: 'en', htmlLang: 'en' },
     targetFileName: 'en.html',
     name: 'AIDEN ZHAO',
-    descriptions: [`Test test.<b>123321312</b>`, `12312312`],
+    descriptions: [
+      `Hey there! I'm a post-90s guy who still has dreams to chase. Always believe in <a href="https://en.wiktionary.org/wiki/%E6%96%AD%E6%8D%A8%E9%9B%A2" target="_blank">Danshari</a> and keeping my room clean and tidy. Plus, I'm also a huge fan of ACG culture and classic rock music.`,
+      `Currently, I'm working as a front-end developer at <a href="https://www.sohu.com/" target="_blank">Sohu</a> located in Beijing. <a href="https://vuejs.org/" target="_blank">Vue</a> and <a href="https://mp.weixin.qq.com/cgi-bin/wx" target="_blank">Wechat Miniprogram</a> are what I usually use to do the programming. Although I haven't made any achievements in the field yet, computer technologies will always be my passion.`,
+      `Ordinary and silly as I am , I still hope I will bring some small changes to the world, even just tiny ones. No matter how tough life gets, I'm always on the road.`,
+    ],
     contact: {
       title: 'Contact',
       list: [

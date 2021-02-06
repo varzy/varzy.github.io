@@ -1,12 +1,9 @@
+$color-bg: #f6f6f6;
+
 html {
   font-family: 'Open Sans', Sans-Serif;
 
-  a {
-    color: #333;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
+  body {
+    background-color: $color-bg;
   }
 }
