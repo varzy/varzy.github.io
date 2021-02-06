@@ -11,6 +11,8 @@ html(lang=locale.htmlLang)
     meta(name='description' content="zy's homepage")
     meta(name='keywords' content='zy, aiden zhao, homepage, github, blog, resume, 主页, 个人主页, 简历, 博客')
     link(rel='shortcut icon' href='../assets/favicon.png')
+    link(rel="preconnect", href="https://fonts.gstatic.com")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400")
     link(rel='stylesheet' href='../styles/app.scss')
 
   body
@@ -23,9 +25,9 @@ html(lang=locale.htmlLang)
 
       .container
         .row
-          .col-lg-5.d-flex.justify-content-center.justify-content-lg-end
+          .col-lg-4.d-flex.justify-content-center.justify-content-lg-end
             img.avatar(src="../assets/avatar.jpg", alt="my avatar")
-          .col-lg-6.col-xl-5.mt-lg-0.mt-4
+          .col-lg-6.mt-lg-0.mt-4
             h1.title #{name}
 
             each desc in descriptions

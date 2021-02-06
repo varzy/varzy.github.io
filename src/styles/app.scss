@@ -1,12 +1,9 @@
-// Resources
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+// Libraries
+@import 'bootstrap';
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 // Reset
 @import 'reset';
-
-// Libraries
-@import "bootstrap";
-@import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 // Page
 @import 'index';

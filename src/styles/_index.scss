@@ -1,3 +1,8 @@
+@mixin base-font {
+  font-weight: 300;
+  letter-spacing: 0.06em;
+}
+
 .index {
   position: relative;
   width: 100vw;
@@ -5,13 +10,13 @@
   display: flex;
   align-items: center;
 
-  @include media-breakpoint-down(lg) {
-    padding-top: 96px;
-    padding-bottom: 120px;
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+  // @include media-breakpoint-down(lg) {
+  //   padding-top: 96px;
+  //   padding-bottom: 120px;
+  //   display: block;
+  //   width: 100%;
+  //   height: auto;
+  // }
 
   .locale {
     position: absolute;
@@ -26,24 +31,52 @@
   }
 
   h1.title {
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 48px;
     margin-bottom: 8px;
   }
 
   p.desc {
-    margin-bottom: 8px;
+    @include base-font();
+    margin-bottom: 16px;
+    line-height: 1.6;
+    font-size: 18px;
 
     a {
-      color: $link-color;
+      position: relative;
+
+      &:link,
+      &:visited {
+        color: #3273dc;
+      }
+
+      &:hover,
+      &:active {
+        color: #292929;
+      }
+
+      // &:after {
+      //   content: '';
+      //   position: absolute;
+      //   top: 68%;
+      //   left: -0.1em;
+      //   right: -0.1em;
+      //   bottom: 0;
+      //   transition: top .2s cubic-bezier(0, 0.8, 0.13, 1);
+      //   background-color: rgba(50, 115, 220, 0.5);
+      // }
+
+      // &:hover:after {
+      //   top: 0%;
+      // }
     }
   }
 
   h2.section_title {
     font-size: 34px;
-    margin-top: 32px;
+    margin-top: 36px;
     margin-bottom: 8px;
-    font-weight: lighter;
+    font-weight: 300;
   }
 
   .list {
@@ -52,11 +85,13 @@
 
     &-item {
       list-style: none;
+      @include base-font();
+      font-size: 16px;
 
       .link {
         &-icon {
           display: inline-block;
-          width: 24px;
+          width: 28px;
         }
       }
     }
@@ -65,7 +100,7 @@
   .list-links {
     .list-item {
       display: inline-block;
-      margin-right: 16px;
+      margin-right: 24px;
     }
   }
 }

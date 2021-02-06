@@ -23,7 +23,7 @@ jobs:
 
       - name: Install and Build
         run: |
-          yarn && yarn build
+          yarn && yarn gb
           cd dist
           echo 'varzy.me' > CNAME
 
