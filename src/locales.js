@@ -1,7 +1,7 @@
 module.exports = [
   {
     locale: { key: 'zh_cn', htmlLang: 'zh-cmn-Hans' },
-    targetFileName: 'index.html',
+    targetFileName: 'zh.html',
     name: '赵 越',
     descriptions: [
       `进击的普通人。90后。断舍离主义者，睡醒了会叠被子。ACG 爱好者，老摇滚爱好者。`,
@@ -48,7 +48,7 @@ module.exports = [
   },
   {
     locale: { key: 'en', htmlLang: 'en' },
-    targetFileName: 'en.html',
+    targetFileName: 'index.html',
     name: 'AIDEN ZHAO',
     descriptions: [
       `Hey there! I'm a post-90s guy who still has dreams to chase. Always believe in <a href="https://en.wiktionary.org/wiki/%E6%96%AD%E6%8D%A8%E9%9B%A2" target="_blank">Danshari</a> and keeping my room tidy and clean. Plus, I'm also a huge fan of ACG culture and classic rock music.`,
