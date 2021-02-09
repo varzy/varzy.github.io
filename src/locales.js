@@ -9,7 +9,7 @@ module.exports = [
       `尽管平平无奇，但仍然希望这个世界的运行轨迹能因我而发生一丝偏转。我正在努力。`,
     ],
     contact: {
-      title: 'Contact',
+      title: '联系我',
       list: [
         { icon: 'fas fa-inbox', href: 'mailto:i@yuezhao.me', label: 'i@yuezhao.me' },
         {
@@ -21,7 +21,7 @@ module.exports = [
       ],
     },
     links: {
-      title: 'Links',
+      title: '一些链接',
       list: [
         {
           icon: 'fab fa-github',
@@ -30,6 +30,7 @@ module.exports = [
           target: '_blank',
         },
         { icon: 'fas fa-blog', label: '博客', href: 'https://varzy.me/blog/' },
+        { icon: 'fas fa-code', label: '笔记', href: 'https://www.notion.so/Stacks-23a151f7310543e186304f74c8b15034' },
         { icon: 'fas fa-user-astronaut', label: '简历', href: 'https://varzy.me/resume/' },
         {
           icon: 'fab fa-twitter',
@@ -72,6 +73,7 @@ module.exports = [
       list: [
         { icon: 'fab fa-github', label: 'Github', href: 'https://github.com/varzy' },
         { icon: 'fas fa-blog', label: 'Blog', href: 'https://varzy.me/blog/' },
+        { icon: 'fas fa-code', label: 'Notes', href: 'https://www.notion.so/Stacks-23a151f7310543e186304f74c8b15034' },
         { icon: 'fas fa-user-astronaut', label: 'Resume', href: 'https://varzy.me/resume/' },
         { icon: 'fab fa-twitter', label: 'Twitter', href: 'https://twitter.com/varzyme' },
         {
