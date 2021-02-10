@@ -30,7 +30,12 @@ module.exports = [
           target: '_blank',
         },
         { icon: 'fas fa-blog', label: '博客', href: 'https://varzy.me/blog/' },
-        { icon: 'fas fa-code', label: '笔记', href: 'https://www.notion.so/Stacks-23a151f7310543e186304f74c8b15034' },
+        {
+          icon: 'fas fa-code',
+          label: '笔记',
+          href: 'https://www.notion.so/Stacks-23a151f7310543e186304f74c8b15034',
+          target: '_blank',
+        },
         { icon: 'fas fa-user-astronaut', label: '简历', href: 'https://varzy.me/resume/' },
         {
           icon: 'fab fa-twitter',
@@ -73,7 +78,12 @@ module.exports = [
       list: [
         { icon: 'fab fa-github', label: 'Github', href: 'https://github.com/varzy' },
         { icon: 'fas fa-blog', label: 'Blog', href: 'https://varzy.me/blog/' },
-        { icon: 'fas fa-code', label: 'Notes', href: 'https://www.notion.so/Stacks-23a151f7310543e186304f74c8b15034' },
+        {
+          icon: 'fas fa-code',
+          label: 'Notes',
+          href: 'https://www.notion.so/Stacks-23a151f7310543e186304f74c8b15034',
+          target: '_blank',
+        },
         { icon: 'fas fa-user-astronaut', label: 'Resume', href: 'https://varzy.me/resume/' },
         { icon: 'fab fa-twitter', label: 'Twitter', href: 'https://twitter.com/varzyme' },
         {
