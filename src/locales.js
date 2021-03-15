@@ -33,7 +33,7 @@ module.exports = [
         {
           icon: 'fas fa-code',
           label: '笔记',
-          href: 'https://www.notion.so/Stacks-23a151f7310543e186304f74c8b15034',
+          href: 'https://varzy.me/notes',
           target: '_blank',
         },
         { icon: 'fas fa-user-astronaut', label: '简历', href: 'https://varzy.me/resume/' },
@@ -81,7 +81,7 @@ module.exports = [
         {
           icon: 'fas fa-code',
           label: 'Notes',
-          href: 'https://www.notion.so/Stacks-23a151f7310543e186304f74c8b15034',
+          href: 'https://varzy.me/notes',
           target: '_blank',
         },
         { icon: 'fas fa-user-astronaut', label: 'Resume', href: 'https://varzy.me/resume/' },
