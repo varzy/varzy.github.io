@@ -29,7 +29,7 @@ module.exports = [
           href: 'https://github.com/varzy',
           target: '_blank',
         },
-        { icon: 'fas fa-blog', label: '博客', href: 'https://varzy.me/blog/' },
+        { icon: 'fas fa-blog', label: '博客', href: 'https://blog.varzy.me' },
         {
           icon: 'fas fa-code',
           label: '笔记',
@@ -77,7 +77,7 @@ module.exports = [
       title: 'Links',
       list: [
         { icon: 'fab fa-github', label: 'Github', href: 'https://github.com/varzy' },
-        { icon: 'fas fa-blog', label: 'Blog', href: 'https://varzy.me/blog/' },
+        { icon: 'fas fa-blog', label: 'Blog', href: 'https://blog.varzy.me' },
         {
           icon: 'fas fa-code',
           label: 'Notes',
