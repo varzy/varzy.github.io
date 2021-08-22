@@ -1,0 +1,30 @@
+html {
+  --color-primary: #3273dc;
+  --color-ink: #292929;
+  --color-bg: #fafafa;
+
+  @media (prefers-color-scheme: dark) {
+    --color-primary: #489ee9;
+    --color-ink: #fff;
+    --color-bg: #111;
+  }
+
+  body {
+    font-family: 'Raleway', $font-family-base !important;
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+  }
+
+  a:link,
+  a:visited {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: all 0.24s ease-in-out;
+  }
+
+  a:hover,
+  a:active {
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+}

@@ -13,24 +13,25 @@ html(lang=locale.htmlLang)
     link(rel='shortcut icon' href='../assets/favicon.png')
     link(rel="preconnect", href="https://fonts.gstatic.com")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400")
-    link(rel='stylesheet' href='../styles/app.scss')
+    link(rel='stylesheet' href='../css/app.scss')
 
   body
     .index
       .locale
         if locale.key == 'zh_cn'
-          a(href="/") ENG
+          a.toggler(href="/") ENG
         else
-          a(href="zh.html") 中
+          a.toggler(href="zh.html") 中
+
       .container
         .row
           .col-lg-3.d-flex.justify-content-center.justify-content-lg-end
             img.avatar(src="../assets/avatar.jpg", alt="my avatar")
+
           .col-lg-7.mt-lg-0.mt-4
             h1.title #{name}
-
             each desc in descriptions
               p.desc
                 != desc
 
-    script(src="../scripts/main.js")
+    script(src="../js/main.js")

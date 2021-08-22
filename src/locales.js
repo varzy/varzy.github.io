@@ -22,6 +22,7 @@ const links = {
     github: buildLink('Github', 'https://github.com/varzy'),
     notes: buildLink('Notes', 'https://varzy.me/notes'),
     resume: buildLink('Resume', 'https://varzy.me/resume'),
+    sohu: buildLink('Sohu', 'https://www.sohu.com/'),
   },
 };
 
@@ -31,9 +32,9 @@ module.exports = [
     targetFileName: 'zh.html',
     name: '赵 越',
     descriptions: [
-      `90后，现居北京。断舍离主义者，ACG 爱好者，欧美老摇滚爱好者，以及半个完美主义者。喜欢简洁的桌面和无 LOGO 的衣服，睡醒了会叠被子。`,
-      `你可以在我的${links.zh_cn.blog}聆听我的呓语，虽然我有 ${links.zh_cn.twitter} 账号，但现在更经常在我的 ${links.zh_cn.telegram_channel} 分享我的所见所闻所思。我还有在${links.zh_cn.douban}标记我看过的书影音的习惯。如果你想联系我，可以${links.zh_cn.email}或${links.zh_cn.telegram}。`,
-      `我目前就职于北京搜狐公司，暂时擅长 Web 前端方向。我通常使用 ${links.zh_cn.github} 托管代码。另外，我还公开了一些开发过程中积累的${links.zh_cn.notes}，如果你也是开发者，不妨去看一看。如果你正巧在招贤纳士，也可以看看我的${links.zh_cn.resume}。`,
+      `90 后程序员，现居北京。ACG 爱好者，老摇滚爱好者，半个极客以及半个完美主义者。信奉断舍离主义，喜欢简洁的桌面和无 LOGO 的衣服，睡醒了会叠被子。`,
+      `你可以在我的${links.zh_cn.blog}聆听我的臆语。虽然有 ${links.zh_cn.twitter} 账号，但我现在更倾向于把零碎心情分享到自己的 ${links.zh_cn.telegram_channel}。我还有在${links.zh_cn.douban}标记书影音的习惯。如果你想联系我，可以给我${links.zh_cn.email}或${links.zh_cn.telegram}。`,
+      `我对各种技术都充满好奇，但当下正专注于 Web 领域，目前以前端开发工程师的身份就职于搜狐(北京)公司。我通常使用 ${links.zh_cn.github} 托管开源项目，另外，我还公开了一些开发过程中积累的${links.zh_cn.notes}，如果你也是开发者，不妨去留下你的足迹。假如你正巧在招贤纳士，也可以瞄一眼我的${links.zh_cn.resume}。`,
       `尽管平平无奇，但仍然希望这个世界的运行轨迹能因我而发生一丝偏转。我正在努力。`,
     ],
   },
@@ -41,11 +42,16 @@ module.exports = [
     locale: { key: 'en', htmlLang: 'en' },
     targetFileName: 'index.html',
     name: 'AIDEN ZHAO',
-    descriptions: [``],
-    descriptionsOld: [
-      `I'm a post-90s guy who still has dreams to chase. Always believe in <a href="https://en.wiktionary.org/wiki/%E6%96%AD%E6%8D%A8%E9%9B%A2" target="_blank">Danshari</a> and keeping my room tidy and clean. Plus, I'm also a huge fan of ACG culture and classic rock music.`,
-      `Currently, I'm working as a front-end developer at <a href="https://www.sohu.com/" target="_blank">Sohu</a> located in Beijing. <a href="https://vuejs.org/" target="_blank">Vue</a> and <a href="https://mp.weixin.qq.com/cgi-bin/wx" target="_blank">Wechat Miniprogram</a> are what I usually use to do the programming. Although I haven't made any achievements in the field yet, computer technologies will always be my passion.`,
+    descriptions: [
+      `A post-90s developer living in Beijing, hugo fan of ACG culture and classic rock music. Always believe in Danshari and keeping my desktop and room clean. I'm also a logo-free clothing guy.`,
+      `You can listen to my meaningless talk on my ${links.en.blog}. I use ${links.en.twitter}, but currently I usually post my brain flash on my ${links.en.telegram_channel}. Plus, I have a hobby that I will rate every book, drama, or movie at ${links.en.douban}. If you want to contact me, please send me an ${links.en.email} or start a chat at ${links.en.telegram}.`,
+      `I am interested in every computer technology but now I'm focused on the Web area. Currently, I'm working as a front-end developer at ${links.en.sohu} located in Beijing. I use ${links.en.github} like most developers. You can also move to the public ${links.en.notes} I accumulated during my developer life, all friendly comments are welcomed. BTW, if you are still hiring, why not take a minute on my ${links.en.resume}.`,
       `Ordinary and silly as I am, I'm still hoping that I will be able to bring some small changes to the world, even just tiny little ones. Ultimately, no matter how tough life gets, I'm always on the road.`,
     ],
+    // descriptions: [
+    //   `I'm a post-90s guy who still has dreams to chase. Always believe in <a href="https://en.wiktionary.org/wiki/%E6%96%AD%E6%8D%A8%E9%9B%A2" target="_blank">Danshari</a> and keeping my room tidy and clean. Plus, I'm also a huge fan of ACG culture and classic rock music.`,
+    //   `Currently, I'm working as a front-end developer at <a href="https://www.sohu.com/" target="_blank">Sohu</a> located in Beijing. <a href="https://vuejs.org/" target="_blank">Vue</a> and <a href="https://mp.weixin.qq.com/cgi-bin/wx" target="_blank">Wechat Miniprogram</a> are what I usually use to do the programming. Although I haven't made any achievements in the field yet, computer technologies will always be my passion.`,
+    //   `Ordinary and silly as I am, I'm still hoping that I will be able to bring some small changes to the world, even just tiny little ones. Ultimately, no matter how tough life gets, I'm always on the road.`,
+    // ],
   },
 ];

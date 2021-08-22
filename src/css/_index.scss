@@ -23,6 +23,18 @@
     position: absolute;
     right: 20px;
     top: 20px;
+
+    .toggler {
+      &:link,
+      &:visited {
+        color: var(--color-ink);
+      }
+
+      &:hover,
+      &:active {
+        color: var(--color-primary);
+      }
+    }
   }
 
   .avatar {
@@ -43,34 +55,24 @@
     line-height: 1.6;
     font-size: 18px;
 
-    a {
-      position: relative;
+    // a {
+    //   position: relative;
 
-      &:link,
-      &:visited {
-        color: #3273dc;
-      }
+    //   &:after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 50%;
+    //     left: -0.1em;
+    //     right: -0.1em;
+    //     bottom: 0;
+    //     transition: top .2s cubic-bezier(0, 0.8, 0.13, 1);
+    //     background-color: rgba(50, 115, 220, 0.5);
+    //   }
 
-      &:hover,
-      &:active {
-        color: #000;
-      }
-
-      // &:after {
-      //   content: '';
-      //   position: absolute;
-      //   top: 68%;
-      //   left: -0.1em;
-      //   right: -0.1em;
-      //   bottom: 0;
-      //   transition: top .2s cubic-bezier(0, 0.8, 0.13, 1);
-      //   background-color: rgba(50, 115, 220, 0.5);
-      // }
-
-      // &:hover:after {
-      //   top: 0%;
-      // }
-    }
+    //   &:hover:after {
+    //     top: 0%;
+    //   }
+    // }
   }
 
   // h2.section_title {
