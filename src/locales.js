@@ -43,7 +43,7 @@ module.exports = [
     targetFileName: 'index.html',
     name: 'AIDEN ZHAO',
     descriptions: [
-      `A post-90s developer living in Beijing, hugo fan of ACG culture and classic rock music. Always believe in Danshari and keeping my desktop and room clean. I'm also a logo-free clothing guy.`,
+      `A post-90s developer living in Beijing, a huge fan of ACG culture and classic rock music. Always believe in Danshari and keeping my desktop and room clean. I'm also a logo-free clothing guy.`,
       `You can listen to my meaningless talk on my ${links.en.blog}. I use ${links.en.twitter}, but currently I usually post my brain flash on my ${links.en.telegram_channel}. Plus, I have a hobby that I will rate every book, drama, or movie at ${links.en.douban}. If you want to contact me, please send me an ${links.en.email} or start a chat at ${links.en.telegram}.`,
       `I am interested in every computer technology but now I'm focused on the Web area. Currently, I'm working as a frontend developer at ${links.en.sohu} located in Beijing. I use ${links.en.github} like most developers. You can also move to the public ${links.en.notes} I accumulated during my developing life, all friendly comments are welcomed. BTW, if you are still hiring, why not take a minute on my ${links.en.resume}.`,
       `Ordinary and silly as I am, I'm still hoping that I will be able to bring some small changes to the world, even just tiny little ones. I'm always on the road.`,
