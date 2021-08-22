@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "generate": "node ./src/generate.js",
-    "dev": "parcel \"src/templates/index.html\"",
-    "build": "parcel build \"src/templates/index.html\"",
+    "dev": "parcel \"src/html/index.html\"",
+    "build": "parcel build \"src/html/index.html\" --no-source-maps",
     "lint": "prettier --write \"src/**/*.{html,css,scss,sass,js,json}\" --print-width 100 --single-quote",
     "gd": "npm run generate && npm run dev",
     "gb": "npm run generate && npm run build"
@@ -17,10 +17,7 @@
     "bootstrap": "^5.1.0"
   },
   "devDependencies": {
-    "@parcel/transformer-image": "2.0.0-rc.0",
-    "@parcel/transformer-sass": "2.0.0-rc.0",
-    "autoprefixer": "^9",
-    "parcel": "^2.0.0-rc.0",
+    "parcel-bundler": "^1.12.5",
     "prettier": "^2.0.2",
     "pug": "^3.0.0",
     "sass": "^1.26.3"
