@@ -33,7 +33,7 @@ module.exports = [
     name: '赵 越',
     descriptions: [
       `90 后程序员，现居北京。ACG 爱好者，老摇滚爱好者，半个极客以及半个完美主义者。信奉断舍离主义，喜欢简洁的桌面和无 LOGO 的衣服，睡醒了会叠被子。`,
-      `你可以在我的${links.zh_cn.blog}驻足凝听我的臆语。虽然有 ${links.zh_cn.twitter} 账号，但我现在更倾向于把零碎心情分享到自己的 ${links.zh_cn.telegram_channel}。我还有在${links.zh_cn.douban}标记书影音的习惯。如果你想联系我，欢迎给我${links.zh_cn.email}或${links.zh_cn.telegram}。`,
+      `你可以在我的${links.zh_cn.blog}驻足凝听我的臆语。虽然有 ${links.zh_cn.twitter} 账号，但我现在更倾向于把零碎心情分享到自己的 ${links.zh_cn.telegram_channel}。我还有在${links.zh_cn.douban}标记书影音的习惯。如果你想联系我，可以给我${links.zh_cn.email}或${links.zh_cn.telegram}。`,
       `我对各种技术都充满好奇，但当下正专注于 Web 领域，目前以前端开发工程师的身份就职于搜狐(北京)公司。我通常使用 ${links.zh_cn.github} 托管开源项目，另外，我还公开了一些开发过程中积累的${links.zh_cn.notes}，如果你也是开发者，不妨去留下你的足迹。假如你正巧在招贤纳士，也欢迎瞄一眼我的${links.zh_cn.resume}。`,
       `尽管平平无奇，但仍然希望这个世界的运行轨迹能因我而发生一丝偏转。我正在努力。`,
     ],
