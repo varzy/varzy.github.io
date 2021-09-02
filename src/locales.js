@@ -44,7 +44,7 @@ module.exports = [
     name: 'AIDEN ZHAO',
     descriptions: [
       `A post-90s developer living in Beijing, a huge fan of ACG culture and classic rock music, a geek believing in Danshari and keeping the desktop clean with a strong preference for logo-free clothes.`,
-      `You are welcome to read the reflection of my thoughts on my ${links.en.blog}. I also have a ${links.en.twitter} account but I usually post my brain flash on my ${links.en.telegram_channel}. Plus, I've got a habit of using ${links.en.douban} to rate books, dramas, or movies. If you want to contact me, just send me an ${links.en.email} or hit me up on ${links.en.telegram}.`,
+      `You are welcome to read the reflection of my thoughts on my ${links.en.blog}. I also have a ${links.en.twitter} account but I usually post my brain flash on my ${links.en.telegram_channel}. Plus, I've got a habit of using ${links.en.douban} to rate books, dramas, and movies. If you want to contact me, just send me an ${links.en.email} or hit me up on ${links.en.telegram}.`,
       `I am interested in every computer technology but now I'm focusing on the Web area. Currently, I'm working as a frontend developer at ${links.en.sohu} (Beijing). I use ${links.en.github} like most developers. And I have been posting the ${links.en.notes} that I took since I started my programming life, where any comments you may leave are welcome. BTW, if you are hiring right now, then why not take a minute and read my ${links.en.resume}.`,
       `Plain and silly as I am, I'm still hoping that I will be able to make a change to the world, even just a tiny little one. I'm always on the road.`,
     ],
