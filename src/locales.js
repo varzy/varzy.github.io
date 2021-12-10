@@ -4,7 +4,7 @@ const links = {
   zh_cn: {
     blog: buildLink('博客', 'https://blog.varzy.me'),
     twitter: buildLink('Twitter', 'https://twitter.com/varzyme'),
-    telegram_channel: buildLink('Telegram Channel', 'https://t.me/zytalk'),
+    telegram_channel: buildLink('Telegram Channel', 'https://t.me/aboutzy'),
     douban: buildLink('豆瓣', 'https://www.douban.com/people/varzy/'),
     email: buildLink('发邮件', 'mailto:i@yuezhao.me', '_self'),
     telegram: buildLink('拍电报', 'https://t.me/varzy'),
@@ -15,7 +15,7 @@ const links = {
   en: {
     blog: buildLink('Blog', 'https://blog.varzy.me'),
     twitter: buildLink('Twitter', 'https://twitter.com/varzyme'),
-    telegram_channel: buildLink('Telegram Channel', 'https://t.me/zytalk'),
+    telegram_channel: buildLink('Telegram Channel', 'https://t.me/aboutzy'),
     douban: buildLink('Douban', 'https://www.douban.com/people/varzy/'),
     email: buildLink('Email', 'mailto:i@yuezhao.me', '_self'),
     telegram: buildLink('Telegram', 'https://t.me/varzy'),
