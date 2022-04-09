@@ -39,7 +39,7 @@ module.exports = [
     name: '赵 越',
     descriptions: [
       `90 后程序员，现居北京。ACG 爱好者，老摇滚爱好者，半个极客以及半个完美主义者。信奉断舍离主义，喜欢简洁的桌面和无 LOGO 的衣服，睡醒了会叠被子。`,
-      `我的${links.zh_cn.blog}存放了一些倾注精力的长文，那里是想法内敛的孤岛，欢迎登陆。我还创建了一个极具主观色彩的 Telegram 频道「${links.zh_cn.telegramChannel}」，用来分享一切我认为值得分享的事物，欢迎关注。如果你无法访问 Telegram，那么我还有一档定期汇总贼歪说更新，以及不定期添加 Bonus 内容的 Newsletter「${links.zh_cn.newsletter}」，欢迎订阅。`,
+      `我的${links.zh_cn.blog}存放了一些倾注精力的长文，那里是想法内敛的孤岛，欢迎登陆。我还创建了一个更新频率基本遵守劳动法的 Telegram 频道「${links.zh_cn.telegramChannel}」，用来分享一切我认为值得分享的事物，欢迎关注。如果你无法访问 Telegram，那么我还有一档定期汇总贼歪说更新，以及不定期添加 Bonus 内容的 Newsletter「${links.zh_cn.newsletter}」，欢迎订阅。`,
       `我对各种技术都充满好奇，但当下正专注于 Web 领域，目前正在搜狐做前端开发。我通常使用 ${links.zh_cn.github} 托管开源项目，以及使用 Notion 存放${links.zh_cn.notes}。最后，假如你正巧在招贤纳士，不妨瞄一眼我的${links.zh_cn.resume}。`,
       `尽管平平无奇，但仍然希望这个世界的运行轨迹能因我而发生一丝偏转。我正在努力。`,
     ],
