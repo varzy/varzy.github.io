@@ -1,7 +1,6 @@
 {
   "name": "varzy.github.io",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:varzy/varzy.github.io.git",
   "author": "zy <varzy@live.com>",
   "license": "MIT",
