@@ -16,21 +16,29 @@ html(lang=locale.htmlLang)
     link(rel='stylesheet' href='../css/app.scss')
   body
     .index
-      .locale
-        if locale.key == 'en'
-          a.toggler(href="/") 中
-        else
-          a.toggler(href="en.html") ENG
-
       .container
         .row
-          .col-lg-3.d-flex.justify-content-center.justify-content-lg-end
+          .col-lg-5.d-flex.justify-content-center.justify-content-lg-end
             img.avatar(src="../assets/avatar.jpg", alt="my avatar")
 
-          .col-lg-7.mt-lg-0.mt-4
+          .col-lg-14.mt-lg-0.mt-4
             h1.title #{name}
-            each desc in descriptions
-              p.desc
-                != desc
+            .descriptions
+              each desc in descriptions
+                p.descriptions-item
+                  != desc
+
+            hr
+
+            .links
+              p.links-header.fw-bolder 🔗 探访全部链接
+              dl.row.link_group
+               each group in links
+                dt.col-lg-4.fw-light #{group.title}
+                dd.col-lg-20
+                  each link, index in group.items
+                    != link
+                    if index < group.items.length - 1
+                      span &nbsp;&nbsp;·&nbsp;&nbsp;
 
     script(src="../js/main.js")
