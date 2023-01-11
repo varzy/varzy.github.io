@@ -1,30 +1,30 @@
 html {
-  --color-primary: #3273dc;
-  --color-ink: #292929;
-  --color-bg: #fafafa;
+  --zy-color-primary: #3273dc;
+  --zy-color-ink: #292929;
+  --zy-color-bg: #ededed;
 
   @media (prefers-color-scheme: dark) {
-    --color-primary: #71b4f6;
-    --color-ink: #fff;
-    --color-bg: #111;
+    --zy-color-primary: #71b4f6;
+    --zy-color-ink: #fff;
+    --zy-color-bg: #111;
   }
 
   body {
     font-family: 'Raleway', $font-family-base !important;
-    background-color: var(--color-bg);
-    color: var(--color-ink);
+    background-color: var(--zy-color-bg);
+    color: var(--zy-color-ink);
   }
 
   a:link,
   a:visited {
-    color: var(--color-primary);
+    color: var(--zy-color-primary);
     text-decoration: none;
     transition: all 0.24s ease-in-out;
   }
 
   a:hover,
   a:active {
-    color: var(--color-ink);
+    color: var(--zy-color-ink);
     text-decoration: none;
   }
 }

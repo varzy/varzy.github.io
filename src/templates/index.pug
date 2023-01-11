@@ -1,13 +1,13 @@
 doctype html
 
-html(lang=locale.htmlLang)
+html(lang=cn.locale.htmlLang)
   head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge, chrome=1')
     meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
     meta(name='google-site-verification' content='c66gcm0iMw487a2YC6w7cFbrhhe_Mh_vVNC6Pt3Dak8')
     meta(name='theme-color' content='#f5f5f5')
-    title Aiden Zhao
+    title 赵越 | Aiden Zhao
     meta(name='description' content="zy's homepage")
     meta(name='keywords' content='zy, aiden zhao, homepage, github, blog, resume, 主页, 个人主页, 简历, 博客')
     link(rel='shortcut icon' href='../assets/favicon.png')
@@ -18,27 +18,28 @@ html(lang=locale.htmlLang)
     .index
       .container
         .row
-          .col-lg-5.d-flex.justify-content-center.justify-content-lg-end
-            img.avatar(src="../assets/avatar.jpg", alt="my avatar")
-
-          .col-lg-14.mt-lg-0.mt-4
-            h1.title #{name}
-            .descriptions
-              each desc in descriptions
-                p.descriptions-item
-                  != desc
-
-            hr
-
-            .links
-              p.links-header.fw-bolder 🔗 探访全部链接
-              dl.row.link_group
-               each group in links
-                dt.col-lg-4.fw-light #{group.title}
-                dd.col-lg-20
-                  each link, index in group.items
-                    != link
-                    if index < group.items.length - 1
-                      span &nbsp;&nbsp;·&nbsp;&nbsp;
+          .col-md-18.offset-md-3
+            .main.my-4.my-md-5
+              section.area_heading
+                h1.title.mt-2 #{cn.name}
+                hr
+                //- h2.eng_title.mt-2 Aiden Zhao
+              section.area_desc.mt-4
+                h2.subtitle About ME
+                //- img.avatar(src="../assets/avatar.jpg", alt="my avatar")
+                .descriptions
+                  each desc in cn.descriptions
+                    p.descriptions-item
+                      != desc
+              section.area_links.mt-4
+                h2.subtitle Links
+                dl.row
+                  each group in cn.links
+                    dt.col-md-3.fw-light #{group.title}
+                    dd.col-md-24
+                      each link, index in group.items
+                        != link
+                        if index < group.items.length - 1
+                          span &nbsp;&nbsp;·&nbsp;&nbsp;
 
     script(src="../js/main.js")

@@ -4,19 +4,18 @@
   "repository": "git@github.com:varzy/varzy.github.io.git",
   "author": "zy <varzy@live.com>",
   "license": "MIT",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "generate": "node ./src/generate.js",
-    "dev": "parcel \"src/html/index.html\"",
-    "build": "parcel build \"src/html/index.html\" --no-source-maps",
-    "lint": "prettier --write \"src/**/*.{html,css,scss,sass,js,json}\" --print-width 100 --single-quote",
-    "gd": "npm run generate && npm run dev",
-    "gb": "npm run generate && npm run build"
+    "dev": "parcel \"src/templates/*.pug\"",
+    "build": "parcel build \"src/templates/*.pug\" --no-source-maps",
+    "lint": "prettier --write \"src/**/*.{html,css,scss,sass,js,json}\" --print-width 120 --single-quote"
   },
   "dependencies": {
-    "bootstrap": "^5.1.0"
+    "bootstrap": "^5.2.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.4.1",
+    "@parcel/transformer-pug": "^2.8.2",
+    "@parcel/transformer-sass": "2.8.2",
     "parcel": "^2.4.1",
     "prettier": "^2.0.2",
     "pug": "^3.0.0",

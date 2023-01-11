@@ -1,0 +1,44 @@
+doctype html
+
+html(lang=cn.locale.htmlLang)
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge, chrome=1')
+    meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(name='google-site-verification' content='c66gcm0iMw487a2YC6w7cFbrhhe_Mh_vVNC6Pt3Dak8')
+    meta(name='theme-color' content='#f5f5f5')
+    title Aiden Zhao
+    meta(name='description' content="zy's homepage")
+    meta(name='keywords' content='zy, aiden zhao, homepage, github, blog, resume, 主页, 个人主页, 简历, 博客')
+    link(rel='shortcut icon' href='../assets/favicon.png')
+    link(rel="preconnect", href="https://fonts.gstatic.com")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400")
+    link(rel='stylesheet' href='../css/app.scss')
+  body
+    .index
+      .container
+        .row
+          .col-lg-5.d-flex.justify-content-center.justify-content-lg-end
+            img.avatar(src="../assets/avatar.jpg", alt="my avatar")
+
+          .col-lg-14.mt-lg-0.mt-4
+            h1.title #{cn.name}
+            .descriptions
+              each desc in cn.descriptions
+                p.descriptions-item
+                  != desc
+
+            hr
+
+            .links
+              p.links-header.fw-bolder 🔗 Visit All Links
+              dl.row.link_group
+               each group in cn.links
+                dt.col-lg-4.fw-light #{group.title}
+                dd.col-lg-20
+                  each link, index in group.items
+                    != link
+                    if index < group.items.length - 1
+                      span &nbsp;&nbsp;·&nbsp;&nbsp;
+
+    script(src="../js/main.js")
