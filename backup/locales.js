@@ -33,7 +33,7 @@ module.exports = [
   {
     outputFile: 'index.html',
     locals: {
-      locale: { key: 'zh_cn', htmlLang: 'zh-cmn-Hans' },
+      locale: { key: 'zh_cn', lang: 'zh-cmn-Hans' },
       name: '赵 越',
       descriptions: [
         `90 后程序员，现居北京。ACG 爱好者，老摇滚爱好者，半个极客以及半个完美主义者。信奉断舍离主义，喜欢简洁的桌面和无 LOGO 的衣服，睡醒了会叠被子。`,
@@ -68,7 +68,7 @@ module.exports = [
   //   }
   // }
   // {
-  //   locale: { key: 'en', htmlLang: 'en' },
+  //   locale: { key: 'en', lang: 'en' },
   //   targetFileName: 'en.html',
   //   name: 'AIDEN ZHAO',
   //   descriptions: [

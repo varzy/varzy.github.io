@@ -1,44 +1,30 @@
 .index {
-  font-weight: 300;
-  letter-spacing: 0.06em;
-  // PC 端使用 flex 让内容垂直居中
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  overflow-y: auto;
-
-  // 移动端取消 flex 布局改用流式布局
+  font-size: 18px;
   @include media-breakpoint-down(lg) {
-    padding-top: 96px;
-    padding-bottom: 160px;
-    display: block;
-    width: 100%;
-    height: auto;
+    font-size: 16px;
   }
-
-  .avatar {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
-
-  h1.title {
+  * {
     font-weight: 300;
-    font-size: 48px;
-    margin-bottom: 8px;
   }
-
+  .avatar {
+    object-fit: cover;
+    width: 192px;
+    height: 192px;
+    @include media-breakpoint-down(lg) {
+      width: 168px;
+      height: 168px;
+    }
+  }
+  h1.title {
+    font-size: 48px;
+  }
+  h2.subtitle {
+    font-style: italic;
+    font-size: 20px;
+  }
   .descriptions {
     &-item {
-      margin-bottom: 16px;
       line-height: 1.6;
-      font-size: 18px;
-
-      @include media-breakpoint-down(lg) {
-        font-size: 17px;
-      }
     }
   }
 }
