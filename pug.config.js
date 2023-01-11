@@ -19,7 +19,7 @@ const cnLinks = {
 module.exports = {
   locals: {
     cn: {
-      locale: { htmlLang: 'zh-cmn-Hans' },
+      htmlLang: 'zh-cmn-Hans',
       name: '赵 越',
       descriptions: [
         `90 后程序员，现居北京。ACG 爱好者，老摇滚爱好者，半个极客以及半个完美主义者。信奉断舍离主义，喜欢简洁的桌面和无 LOGO 的衣服，睡醒了会叠被子。`,

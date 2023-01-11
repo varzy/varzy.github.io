@@ -1,76 +1,44 @@
 .index {
   font-weight: 300;
   letter-spacing: 0.06em;
-  font-size: 17px;
-  @include media-breakpoint-down(md) {
-    font-size: 14px;
+  // PC 端使用 flex 让内容垂直居中
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+
+  // 移动端取消 flex 布局改用流式布局
+  @include media-breakpoint-down(lg) {
+    padding-top: 96px;
+    padding-bottom: 160px;
+    display: block;
+    width: 100%;
+    height: auto;
   }
-  .main {
-    padding: 16px;
-    background-color: #fff;
-    border-radius: 8px;
-    h1,h2,h3,h4,h5,h6 {
-      font-weight: 300;
-    }
-    .avatar {
-      display: block;
-      border-radius: 8px;
-      width: 120px;
-      height: 120px;
-      float: left;
-    }
-    h1.title {
-      font-size: 48px;
-      margin-bottom: 8px;
-    }
-    h2.subtitle {
-      font-size: 22px;
-      margin-bottom: 8px;
+
+  .avatar {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  h1.title {
+    font-weight: 300;
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+
+  .descriptions {
+    &-item {
+      margin-bottom: 16px;
+      line-height: 1.6;
+      font-size: 18px;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 17px;
+      }
     }
   }
 }
-
-// .index {
-//   font-weight: 300;
-//   letter-spacing: 0.06em;
-//   // PC 端使用 flex 让内容垂直居中
-//   width: 100vw;
-//   height: 100vh;
-//   display: flex;
-//   align-items: center;
-//   overflow-y: auto;
-
-//   // 移动端取消 flex 布局改用流式布局
-//   @include media-breakpoint-down(lg) {
-//     padding-top: 96px;
-//     padding-bottom: 160px;
-//     display: block;
-//     width: 100%;
-//     height: auto;
-//   }
-
-//   .avatar {
-//     display: inline-block;
-//     width: 200px;
-//     height: 200px;
-//     border-radius: 50%;
-//   }
-
-//   h1.title {
-//     font-weight: 300;
-//     font-size: 48px;
-//     margin-bottom: 8px;
-//   }
-
-//   .descriptions {
-//     &-item {
-//       margin-bottom: 16px;
-//       line-height: 1.6;
-//       font-size: 18px;
-
-//       @include media-breakpoint-down(lg) {
-//         font-size: 17px;
-//       }
-//     }
-//   }
-// }
