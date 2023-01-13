@@ -1,5 +1,8 @@
 .index {
+  letter-spacing: 0.8px;
+  text-align: justify;
   font-size: 18px;
+  line-height: 1.72;
   @include media-breakpoint-down(lg) {
     font-size: 16px;
   }
@@ -17,14 +20,15 @@
   }
   h1.title {
     font-size: 48px;
+    @include media-breakpoint-down(lg) {
+      font-size: 42px;
+    }
   }
   h2.subtitle {
     font-style: italic;
-    font-size: 20px;
-  }
-  .descriptions {
-    &-item {
-      line-height: 1.6;
+    font-size: 18px;
+    @include media-breakpoint-down(lg) {
+      font-size: 16px;
     }
   }
 }
