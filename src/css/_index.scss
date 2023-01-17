@@ -1,14 +1,15 @@
 .index {
   letter-spacing: 0.8px;
   text-align: justify;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.72;
+  font-weight: 300;
   @include media-breakpoint-down(lg) {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.4px;
-  }
-  * {
-    font-weight: 300;
+    a {
+      white-space: nowrap;
+    }
   }
   .avatar {
     object-fit: cover;
@@ -20,12 +21,14 @@
     }
   }
   h1.title {
+    font-weight: 300;
     font-size: 48px;
     @include media-breakpoint-down(lg) {
       font-size: 42px;
     }
   }
   h2.subtitle {
+    font-weight: 300;
     font-style: italic;
     font-size: 18px;
     @include media-breakpoint-down(lg) {
