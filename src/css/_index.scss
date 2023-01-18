@@ -1,14 +1,16 @@
 .index {
   letter-spacing: 0.8px;
   text-align: justify;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.72;
   font-weight: 300;
   @include media-breakpoint-down(lg) {
-    font-size: 15px;
-    letter-spacing: 0.4px;
-    a {
-      white-space: nowrap;
+    font-size: 16px;
+  }
+  a {
+    white-space: nowrap;
+    @include media-breakpoint-down(lg) {
+      white-space: normal;
     }
   }
   .avatar {
