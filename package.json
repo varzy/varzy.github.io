@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "parcel \"src/templates/*.pug\"",
     "build": "parcel build \"src/templates/*.pug\" --no-source-maps",
-    "lint": "prettier --write \"src/**/*.{html,css,scss,sass,js,json}\" --print-width 120 --single-quote"
+    "lint": "prettier --write \"**/*.{html,css,scss,sass,js,json}\" --print-width 120 --single-quote"
   },
   "dependencies": {
     "bootstrap": "^5.2.0"

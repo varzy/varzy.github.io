@@ -1,11 +1,10 @@
-const _a = (label, href, target = '_blank') =>
-  `<a href="${href}" target="${target}">${label}</a>`;
+const _a = (label, href, target = '_blank') => `<a href="${href}" target="${target}">${label}</a>`;
 
 const cnLinks = {
   blog: _a('博客', 'https://blog.varzy.me'),
   telegramChannel: _a('贼歪说', 'https://t.me/aboutzy'),
   newsletter: _a('不正集', 'https://varzy.zhubai.love'),
-  neteaseMusic: _a('贼歪说音乐', 'https://music.163.com/playlist?id=7231521712&userid=45403592'),
+  neteaseMusic: _a('网易云', 'https://music.163.com/playlist?id=7231521712&userid=45403592'),
   twitter: _a('Twitter', 'https://twitter.com/varzyme'),
   douban: _a('豆瓣', 'https://www.douban.com/people/varzy/'),
   email: _a('Email', 'mailto:i@yuezhao.me', '_self'),
@@ -22,20 +21,15 @@ module.exports = {
       lang: 'zh-cmn-Hans',
       name: '赵 越',
       descriptions: [
-        `90 后程序员，现居北京。ACG 爱好者，老摇滚爱好者，半个极客以及半个完美主义者。信奉断舍离主义，喜欢简洁的桌面和无 LOGO 的衣服，睡醒了会叠被子。`,
-        `我的${cnLinks.blog}存放了一些倾注精力的长文，那里是想法内敛的孤岛，欢迎登陆。我还创建了一个 Telegram 频道「${cnLinks.telegramChannel}」和一个 Newsletter「${cnLinks.newsletter}」，用来分享各种我认为值得分享的事物，欢迎订阅。以上内容都托管在「${cnLinks.desk}」，你可以在那里找到我写下的所有文字。`,
-        `我对各种互联网技术都充满好奇，但当下更专注于 Web 领域，目前在搜狐做前端开发。我通常使用 ${cnLinks.github} 托管开源项目。如果你正巧在招贤纳士，不妨瞄一眼我的${cnLinks.resume}。`,
+        `90 后程序员，现居北京。ACG 爱好者，老摇滚爱好者，半个极客。喜欢简洁的桌面和无 LOGO 的衣服，睡醒了会叠被子。`,
+        `我的${cnLinks.blog}有几篇长文，那里是想法内敛的孤岛，欢迎登陆。我的 Telegram 频道「${cnLinks.telegramChannel}」是朋友圈，还会不时分享一些我觉得有趣的东西，欢迎订阅。这些内容都托管在「${cnLinks.desk}」，你可以在那里找到我写下的所有文字。`,
+        `我对各种互联网技术都充满好奇，但当下更专注于 Web 前端领域。我通常使用 ${cnLinks.github} 托管开源项目。如果你正巧在招贤纳士，不妨瞄一眼我的${cnLinks.resume}。`,
         `尽管平平无奇，但仍然希望这个世界的运行轨迹能因我而发生一丝偏转。我正在努力。`,
       ],
       links: [
         {
           title: '内容创作',
-          items: [
-            cnLinks.blog,
-            cnLinks.telegramChannel,
-            cnLinks.newsletter,
-            cnLinks.desk
-          ],
+          items: [cnLinks.blog, cnLinks.telegramChannel, cnLinks.newsletter, cnLinks.desk],
         },
         {
           title: '技术工作',
@@ -43,7 +37,7 @@ module.exports = {
         },
         {
           title: '生活社交',
-          items: [ cnLinks.douban, cnLinks.twitter  ],
+          items: [cnLinks.douban, cnLinks.neteaseMusic, cnLinks.twitter],
         },
         {
           title: '联系我',
@@ -54,5 +48,5 @@ module.exports = {
     // Support multi languages...
     // en: {
     // },
-  }
-}
+  },
+};
