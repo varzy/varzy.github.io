@@ -7,7 +7,7 @@ const cnLinks = {
   neteaseMusic: _a('网易云', 'https://music.163.com/playlist?id=7231521712&userid=45403592'),
   twitter: _a('Twitter', 'https://twitter.com/varzyme'),
   douban: _a('豆瓣', 'https://www.douban.com/people/varzy/'),
-  email: _a('Email', 'mailto:i@yuezhao.me', '_self'),
+  email: _a('Email', 'mailto:varzyme@gmail.com', '_self'),
   telegram: _a('Telegram', 'https://t.me/varzy'),
   github: _a('Github', 'https://github.com/varzy'),
   notes: _a('技术笔记', 'https://varzy.notion.site'),
