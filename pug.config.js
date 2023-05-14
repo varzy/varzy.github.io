@@ -6,6 +6,7 @@ const cnLinks = {
   newsletter: _a('不正集', 'https://varzy.zhubai.love'),
   neteaseMusic: _a('网易云', 'https://music.163.com/playlist?id=7231521712&userid=45403592'),
   twitter: _a('Twitter', 'https://twitter.com/varzyme'),
+  instagram: _a('Instagram', 'https://twitter.com/varzyme'),
   douban: _a('豆瓣', 'https://www.douban.com/people/varzy/'),
   email: _a('Email', 'mailto:varzyme@gmail.com', '_self'),
   telegram: _a('Telegram', 'https://t.me/varzy'),
@@ -37,7 +38,7 @@ module.exports = {
         },
         {
           title: '生活社交',
-          items: [cnLinks.douban, cnLinks.neteaseMusic, cnLinks.twitter],
+          items: [cnLinks.douban, cnLinks.neteaseMusic, cnLinks.instagram],
         },
         {
           title: '联系我',
