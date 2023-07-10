@@ -38,7 +38,7 @@ module.exports = {
         },
         {
           title: '生活社交',
-          items: [cnLinks.douban, cnLinks.neteaseMusic, cnLinks.instagram],
+          items: [cnLinks.instagram, cnLinks.neteaseMusic, cnLinks.douban],
         },
         {
           title: '联系我',
