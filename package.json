@@ -8,17 +8,18 @@
   "scripts": {
     "dev": "parcel \"src/templates/*.pug\"",
     "build": "parcel build \"src/templates/*.pug\" --no-source-maps",
-    "lint": "prettier --write \"**/*.{html,css,scss,sass,js,json}\" --print-width 120 --single-quote"
+    "lint": "prettier --write \"**/*.{html,css,scss,sass,js,json}\" --print-width 120 --single-quote",
+    "reload": "rm -rf dist && rm -rf .parcel-cache && npm run dev"
   },
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.3.2"
   },
   "devDependencies": {
-    "@parcel/transformer-pug": "^2.8.2",
-    "@parcel/transformer-sass": "2.8.2",
-    "parcel": "^2.4.1",
-    "prettier": "^2.0.2",
-    "pug": "^3.0.0",
-    "sass": "^1.26.3"
+    "@parcel/transformer-pug": "^2.10.3",
+    "@parcel/transformer-sass": "2.10.3",
+    "parcel": "^2.10.3",
+    "prettier": "^2.8.8",
+    "pug": "^3.0.2",
+    "sass": "^1.69.5"
   }
 }
