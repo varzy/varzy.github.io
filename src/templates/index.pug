@@ -26,14 +26,14 @@ html(lang=cn.lang)
               each desc in cn.descriptions
                 p.descriptions-item
                   != desc
-            h2.subtitle Links
-            .links.row
-              each group in cn.links
-                dt.col-xl-4.fw-light #{group.title}
-                dd.col-xl-20
-                  each link, index in group.items
-                    != link
-                    if index < group.items.length - 1
-                      span &nbsp;&nbsp;·&nbsp;&nbsp;
+            //- h2.subtitle Links
+            //- .links.row
+            //-   each group in cn.links
+            //-     dt.col-xl-4.fw-light #{group.title}
+            //-     dd.col-xl-20
+            //-       each link, index in group.items
+            //-         != link
+            //-         if index < group.items.length - 1
+            //-           span &nbsp;&nbsp;·&nbsp;&nbsp;
 
     script(src="../js/main.js")
